@@ -15,4 +15,4 @@ jobs:
         env: 
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
         run: |
-          op run --env-file .env -- pulumi up
+          op run --env-file .env -- pulumi up --yes
