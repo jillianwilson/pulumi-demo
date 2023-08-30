@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install 1Password CLI
-        uses: 1password/install-cli@v1
+        uses: 1password/install-cli-action@v1
       - name: Install Pulumi CLI
         uses: pulumi/actions@v4
       - name: Do Pulumi stuff
