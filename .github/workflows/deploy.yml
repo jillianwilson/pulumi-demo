@@ -1,0 +1,15 @@
+on: push
+name: Demo pulumi
+
+jobs:
+  pulumi:
+      - uses: actions/checkout@v3
+      - name: Install 1Password CLI
+        uses: 1password/install-cli@v1
+      - name: Install Pulumi CLI
+        uses: pulumi/actions@v4
+      - name: Do Pulumi stuff
+        env: 
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+        run: |
+          op run --env-file .env -- pulumi up
