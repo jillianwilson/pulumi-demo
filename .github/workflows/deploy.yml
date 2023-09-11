@@ -15,5 +15,5 @@ jobs:
         env: 
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
         run: |
-          op run pulumi stack select dev
+          op run --env-file .env -- pulumi stack select dev
           op run --env-file .env -- pulumi up --yes
