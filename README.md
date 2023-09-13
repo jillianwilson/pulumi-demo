@@ -1,2 +1,2 @@
 # pulumi-demo
-This repo is used to demo pulumi in conjunction with 1Password features such service accounts, and the 1Password CLI in a CI-CD pipeline.
+This repo is used to demo using 1Password to inject secrets into using Pulumi commands. This project relies on 1Password Service Accounts, the 1Password CLI, and the Pulumi CLI.
